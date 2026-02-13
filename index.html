@@ -3,264 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junita Randa Liling</title>
+    <meta name="author" content="Junita">
+    <meta name="description" content="Portfolio Creative Junita">
+    <title>Portfolio Aesthetic - Junita</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Caveat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
     <style>
-        :root {
-            --bg-color: #f0f4f8;
-            --text-color: #333;
-            --card-bg: #ffffff;
-            --card-border: rgba(0, 0, 0, 0.1);
-            --primary-color: #6c63ff;
-            --secondary-color: #ff6584;
-            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-        }
-
-        body.dark-mode {
-            --bg-color: #1a1a2e;
-            --text-color: #e0e0e0;
-            --card-bg: #16213e;
-            --primary-color: #8c85ff;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
         body {
-            background: var(--bg-color);
-            color: var(--text-color);
-            transition: 0.3s;
-            min-height: 100vh;
-            padding-bottom: 50px;
-        }
-
-        .navbar {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 1rem 5%; position: sticky; top: 0; z-index: 1000;
-            background: var(--card-bg); border-bottom: 1px solid var(--card-border);
-        }
-
-        .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary-color); }
-
-        .container { max-width: 600px; margin: 1.5rem auto; padding: 0 15px; }
-
-        .profile-card {
-            background: var(--card-bg); border-radius: 20px;
-            padding: 2rem 1.5rem; box-shadow: var(--shadow); text-align: center;
-            margin-bottom: 1.5rem; 
-        }
-
-        .profile-img-container img {
-            width: 120px; height: 120px; border-radius: 50%;
-            border: 4px solid var(--primary-color); margin-bottom: 1rem;
-            object-fit: cover;
-        }
-
-        .subtitle { color: var(--primary-color); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; }
-        
-        .quick-info { 
-            display: flex; flex-direction: column; gap: 8px; 
-            font-size: 0.85rem; margin-bottom: 1.5rem; opacity: 0.8; 
-        }
-
-        .action-buttons { display: flex; flex-direction: column; gap: 10px; margin-bottom: 1.5rem; }
-        
-        .btn { 
-            padding: 12px; border: none; border-radius: 12px; 
-            cursor: pointer; font-weight: 600; text-align: center;
-            text-decoration: none; font-size: 0.9rem;
-        }
-        .btn.primary { background: var(--primary-color); color: white; }
-        .btn.secondary { background: var(--secondary-color); color: white; }
-
-        .info-block { 
-            background: rgba(0,0,0,0.05); padding: 1.2rem; 
-            border-radius: 12px; border-left: 4px solid var(--primary-color); 
-            text-align: left; margin-top: 10px;
-        }
-        
-        .hidden { display: none; }
-
-        .hobbies-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-        .hobby-tag { background: var(--primary-color); color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.75rem; }
-
-        /* --- STYLING PROJECTS --- */
-        .projects-section { margin-top: 2rem; text-align: left; }
-        .projects-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
-        
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: var(--shadow);
-            border-left: 4px solid var(--secondary-color);
-        }
-
-        .project-card h4 { font-size: 1rem; color: var(--primary-color); margin-bottom: 8px; }
-        .project-card p { font-size: 0.8rem; margin-bottom: 15px; line-height: 1.5; opacity: 0.9; }
-
-        .project-tech {
-            display: inline-block;
-            background: rgba(108, 99, 255, 0.1);
-            color: var(--primary-color);
-            font-size: 0.7rem;
-            padding: 3px 10px;
-            border-radius: 5px;
-            margin-right: 5px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .btn-link {
-            display: inline-flex;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,#f7f6f2,#e9edf2);
+            display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 8px;
-            padding: 8px 15px;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 0.8rem;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .canvas {
+            width: 90%;
+            max-width: 450px;
+            height: 650px;
+            background: #fff;
+            position: relative;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 10px solid rgb(202, 191, 191);
+            border-radius: 18px;
+        }
+
+        .name-tag {
+            position: absolute;
+            top: 40px;
+            left: 35px;
+            font-family: 'Caveat', cursive;
+            font-size: 3.8rem;
+            color: #a67c7c;
+            z-index: 10;
+            transform: rotate(-6deg);
+        }
+
+        .photo-frame {
+            position: absolute;
+            top: 150px;
+            right: 15px;
+            background: transparent;
+            padding: 0;
+            transform: rotate(4deg);
+            transition: 0.4s ease;
+            cursor: pointer;
+            
+        }
+
+        .photo-frame::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 70px;
+            height: 25px;
+            background: rgba(219, 160, 160, 0.4);
+            border: 1px dashed rgba(180, 120, 120, 0.3);
+        }
+
+
+
+        .photo-frame img {
+            width: 165px;
+            height: 180px;
+            object-fit: cover;
+            filter: contrast(1.08) sepia(0.08);
+            display: block;
+        }
+
+        .intro {
+            position: absolute;
+            top: 150px;
+            left: 30px;
+            width: 140px;
+            font-size: 0.78rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .bio {
+            position: absolute;
+            bottom: 60px;
+            left: 20px;
+            width: 80%;
+            z-index: 1000;
+            border: 1px solid #d6d6d6;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+            padding: 20px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.75);
+            backdrop-filter: blur(10px);
+        }
+
+        .bio h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            display: inline-block;
+            position: relative;
+        }
+
+        .bio h1::after {
+            content: "";
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            width: 105%;
+            height: 10px;
+            background: #f1c40f;
+            opacity: 0.3;
+            z-index: -1;
+            border-radius: 3px;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            width: 100%;
+        }
+
+        td {
+            padding: 6px 0;
+            vertical-align: top;
+        }
+
+        .label {
+            width: 95px;
             font-weight: 600;
-            transition: 0.3s;
+            color: #a67c7c;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
         }
 
-        .btn-link:hover { background-color: var(--secondary-color); transform: scale(1.02); }
-
-        /* --- STYLING SKILLS & PENDIDIKAN --- */
-        .skills-section { margin-top: 2rem; text-align: left; }
-        .skills-container { background: var(--card-bg); padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow); }
-        .skill-box { margin-bottom: 15px; }
-        .skill-info { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 0.85rem; font-weight: 600; }
-        .progress-line { height: 8px; width: 100%; background: rgba(0,0,0,0.1); border-radius: 10px; }
-        .progress-line span { height: 100%; border-radius: 10px; display: block; background: var(--primary-color); }
-
-        .education-section { margin-top: 2rem; text-align: left; }
-        .timeline-item { 
-            padding: 15px; border-left: 2px solid var(--primary-color); 
-            margin-left: 10px; position: relative; margin-bottom: 10px;
-            background: var(--card-bg);
+        footer {
+            position: absolute; 
+            bottom: 20px; 
+            left: 35px; 
+            font-size: 0.65rem; 
+            color: #bbb;
         }
 
-        footer { text-align: center; padding: 2rem; font-size: 0.75rem; opacity: 0.6; }
-
-        @media (min-width: 600px) {
-            .projects-grid { grid-template-columns: 1fr 1fr; }
-        }
     </style>
 </head>
+
 <body>
+<main class="canvas">
 
-    <nav class="navbar">
-        <div class="logo">Junita</div>
-        <button onclick="toggleTheme()" class="btn" style="padding: 5px 15px; background: #eee; color: #333;">🌓 Tema</button>
-    </nav>
-
-    <div class="container">
+<header>
+    <div class="name-tag">Junita.</div>
+</header>
         
-        <section class="profile-card">
-            <div class="profile-img-container">
-                <img src="profile.jpeg" alt="Foto Profil">
-            </div>
-            <h1>Junita Randa Liling</h1>
-            <p class="subtitle">Information System Student</p>
+<section>
+    <figure class="photo-frame">
+        <img src="profile.jpeg" alt="Foto Profil Junita">
+    </figure>
+</section>
 
-            <div class="quick-info">
-                <span><i class="fas fa-map-marker-alt"></i> Batam,Indonesia</span>
-                <span><i class="fas fa-birthday-cake"></i> 29 Juni 2005</span>
-            </div>
+<p class="intro">
+    An Information Systems student who enjoys combining technology 
+    with creativity. Passionate about learning, growing, and creating 
+    meaningful digital experiences.
+</p>
 
-            <div class="action-buttons">
-                <button onclick="showTab('about')" class="btn primary">Tentang Saya</button>
-                <button onclick="showTab('hobbies')" class="btn secondary">Lihat Hobi</button>
-                <button onclick="showTab('contact')" class="btn primary">Kontak Saya</button>
-            </div>
+<article class="bio">
+    <h1>About Me.</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td class="label">Full Name</td>
+                <td>:</td>
+                <td>Junita Randa Liling</td>
+            </tr>
+            <tr>
+                <td class="label">Birth Date</td>
+                <td>:</td>
+                <td>20 June 2005</td>
+            </tr>
+            <tr>
+                <td class="label">Major</td>
+                <td>:</td>
+                <td><i>Information Systems</i></td>
+            </tr>
+            <tr>
+                <td class="label">University</td>
+                <td>:</td>
+                <td>University International Batam</td>
+            </tr>
+        </tbody>
+    </table>
+</article>
 
-            <div id="about" class="info-block">
-                <h3>Tentang Saya</h3>
-                <p>Halo, Saya Junita Randa Liling. Mahasiswa Sistem Informasi yang berfokus pada pengembangan perangkat lunak, analisis sistem, dan desain UI/UX.</p>
-            </div>
-            
-            <div id="hobbies" class="info-block hidden">
-                <h3>Hobi & Minat</h3>
-                <div class="hobbies-grid">
-                    <span class="hobby-tag">Nonton 💻</span>
-                    <span class="hobby-tag">Gitar 🎸</span>
-                    <span class="hobby-tag">Membaca 📚</span>
-                </div>
-            </div>
+<footer>
+    <small>&copy; 2026 <strong>Junita</strong></small>
+</footer>
 
-            <div id="contact" class="info-block hidden">
-                <h3>Kontak</h3>
-                <p>Email: lilingjunita5@gmail.com</p>
-                <p>IG: @junitaranda_</p>
-            </div>
-        </section>
-
-        <section class="projects-section">
-            <h3 style="margin-bottom: 15px;">Project Saya</h3>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <h4>Desain UI/UX Aplikasi</h4>
-                    <p>Perancangan prototype aplikasi mobile menggunakan Figma untuk kebutuhan user experience.</p>
-                    <span class="project-tech">Figma</span>
-                    <span class="project-tech">UI/UX</span>
-                    <br><br>
-                    <a href="https://www.figma.com/design/lrrR7ScoQ5FOns5efmnUqi/Untitled?node-id=0-1&t=U2FHl8lv2UpLwv6j-1" target="_blank" class="btn-link">
-                        Lihat Project <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h3 style="margin-bottom: 15px;">Keahlian</h3>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <div class="skill-info"><span>MS Office</span><span>90%</span></div>
-                    <div class="progress-line"><span style="width: 90%;"></span></div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-info"><span>Python</span><span>5%</span></div>
-                    <div class="progress-line"><span style="width: 5%;"></span></div>
-                <div class="skill-box">
-                    <div class="skill-info"><span>Figma</span><span>60%</span></div>
-                    <div class="progress-line"><span style="width: 60%;"></span></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="education-section">
-            <h3 style="margin-bottom: 15px;">Pendidikan</h3>
-            <div class="timeline-item">
-                <h4 style="font-size: 0.9rem;">Universitas Internasional Batam</h4>
-                <p style="font-size: 0.8rem;">2025 - Sekarang</p>
-            </div>
-            <div class="timeline-item">
-                <h4 style="font-size: 0.9rem;">SMA Kristen Immanuel</h4>
-                <p style="font-size: 0.8rem;">2021 - 2024</p>
-            </div>
-        </section>
-
-    </div>
-
-    <footer>&copy; 2025 Junita Randa Liling</footer>
-
-    <script>
-        function showTab(id) {
-            document.getElementById('about').classList.add('hidden');
-            document.getElementById('hobbies').classList.add('hidden');
-            document.getElementById('contact').classList.add('hidden');
-            document.getElementById(id).classList.remove('hidden');
-        }
-
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
+</main>
 </body>
 </html>
